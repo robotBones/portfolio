@@ -5,3 +5,43 @@ body {
 a {
   color: #00b7ff;
 }
+.home-page {
+  padding: 0 1.32em;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #0e201f url("../images/shopping_cart.jpg");
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: 145%;
+  background-blend-mode: luminosity;
+}
+@media only screen and (max-width: 1280px) {
+  .home-page {
+    background-size: 155%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .home-page {
+    background-size: 180%;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .home-page {
+    background-size: 200%;
+    background-position-y: top;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .home-page {
+    background-size: 310%;
+  }
+}
+.name {
+  color: #00838f;
+  font-weight: 200;
+}

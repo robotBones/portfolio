@@ -1,5 +1,40 @@
 body
   padding: 50px
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+
 a
   color: #00B7FF
+
+.home-page
+  padding: 0 2*0.66em
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background: #0e201f url('../images/shopping_cart.jpg')
+  background-repeat-x: no-repeat
+  background-repeat-y: no-repeat
+  background-position-x: center
+  background-position-y: bottom
+  background-size: 145%
+  background-blend-mode: luminosity
+
+  @media only screen
+    @media (max-width: 1280px)
+      background-size: 155%
+
+    @media (max-width: 1024px)
+      background-size: 180%
+
+    @media (max-width: 736px)
+      background-size: 200%
+      background-position-y: top
+
+    @media (max-width: 500px)
+      background-size: 310%
+
+.name
+  color: #00838F
+  font-weight: 200
+
