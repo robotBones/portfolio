@@ -17,8 +17,13 @@ a {
   background-repeat-y: no-repeat;
   background-position-x: center;
   background-position-y: bottom;
-  background-size: 145%;
+  background-size: 100%;
   background-blend-mode: luminosity;
+}
+@media only screen and (max-width: 1400px) {
+  .home-page {
+    background-size: 145%;
+  }
 }
 @media only screen and (max-width: 1280px) {
   .home-page {
@@ -28,17 +33,29 @@ a {
 @media only screen and (max-width: 1024px) {
   .home-page {
     background-size: 180%;
+    background-position-y: top;
+  }
+}
+@media only screen and (max-width: 1024px) and (max-height: 768px) {
+  .home-page {
+    background-position-y: bottom;
   }
 }
 @media only screen and (max-width: 736px) {
   .home-page {
     background-size: 200%;
-    background-position-y: top;
+    background-position-y: bottom;
   }
 }
 @media only screen and (max-width: 500px) {
   .home-page {
     background-size: 310%;
+  }
+}
+@media only screen and (min-height: 1024px) {
+  .home-page {
+    background-size: 230%;
+    background-position-y: bottom;
   }
 }
 .name {

@@ -17,22 +17,35 @@ a
   background-repeat-y: no-repeat
   background-position-x: center
   background-position-y: bottom
-  background-size: 145%
+  background-size: 100%
   background-blend-mode: luminosity
 
   @media only screen
+    @media (max-width: 1400px)
+      background-size: 145%
+
     @media (max-width: 1280px)
       background-size: 155%
 
+    // ipad
     @media (max-width: 1024px)
       background-size: 180%
+      background-position-y: top
+
+      @media(max-height: 768px)
+        background-position-y: bottom
 
     @media (max-width: 736px)
       background-size: 200%
-      background-position-y: top
+      background-position-y: bottom
 
     @media (max-width: 500px)
       background-size: 310%
+
+    // tablet portrait
+    @media (min-height: 1024px)
+      background-size: 230%
+      background-position-y: bottom
 
 .name
   color: #00838F
