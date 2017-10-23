@@ -1,53 +1,26 @@
+$theme-bright-green = #00838F
+$theme-dark-green = #0e201f
+$screen-height = 100vh
+
 body
-  padding: 50px
+  padding: 0
+  margin: 0
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
 
 a
   color: #00B7FF
 
 .home-page
-  padding: 0 2*0.66em
-  position: fixed
-  left: 0
-  top: 0
-  width: 100%
-  height: 100%
-  background: #0e201f url('../images/shopping_cart.jpg')
+  height: $screen-height
+  padding: 1.33em
+  background: $theme-dark-green url('../images/shopping_cart.jpg')
   background-repeat-x: no-repeat
   background-repeat-y: no-repeat
   background-position-x: center
-  background-position-y: bottom
-  background-size: 100%
+  background-size: cover
   background-blend-mode: luminosity
 
-  @media only screen
-    @media (max-width: 1400px)
-      background-size: 145%
-
-    @media (max-width: 1280px)
-      background-size: 155%
-
-    // ipad
-    @media (max-width: 1024px)
-      background-size: 180%
-      background-position-y: top
-
-      @media(max-height: 768px)
-        background-position-y: bottom
-
-    @media (max-width: 736px)
-      background-size: 200%
-      background-position-y: bottom
-
-    @media (max-width: 500px)
-      background-size: 310%
-
-    // tablet portrait
-    @media (min-height: 1024px)
-      background-size: 230%
-      background-position-y: bottom
-
 .name
-  color: #00838F
+  color $theme-bright-green
   font-weight: 200
 
