@@ -16,15 +16,17 @@ a
   left: 0
   height: 100vh
   width: 100%
-  overflow-y: none
+  overflow-y: hidden
   background-color: black
   color: white
   text-align: center
   opacity: 1
-  transition: opacity ease-in 0.2s
+  z-index: 1000
 
   &.stop
     opacity: 0
+    z-index: -1
+    transition: opacity ease-in 0.2s, z-index 0.2s
 
 .loading-message
   line-height: 100vh;
