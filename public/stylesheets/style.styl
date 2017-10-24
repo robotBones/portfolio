@@ -10,7 +10,26 @@ body
 a
   color: #00B7FF
 
-.home-page
+#loading-screen
+  position: fixed
+  top: 0
+  left: 0
+  height: 100vh
+  width: 100%
+  overflow-y: none
+  background-color: black
+  color: white
+  text-align: center
+  opacity: 1
+  transition: opacity ease-in 0.2s
+
+  &.stop
+    opacity: 0
+
+.loading-message
+  line-height: 100vh;
+
+#home-page
   height: $screen-height
   padding: 1.33em
   background: $theme-dark-green url('../images/shopping_cart.jpg')
@@ -19,6 +38,7 @@ a
   background-position-x: center
   background-size: cover
   background-blend-mode: luminosity
+  visibility: none
 
 .name
   color $theme-bright-green

@@ -1,7 +1,9 @@
 extends layout
 
 block content
-  main.home-page(title='placeholder cover page')
+  div#loading-screen
+    span.loading-message Loading Placeholder Images...
+  main#home-page(title='placeholder cover page')
     h1.name= title
     a(href='/blog') blog
   section.dark-section

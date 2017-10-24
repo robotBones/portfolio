@@ -6,7 +6,26 @@ body {
 a {
   color: #00b7ff;
 }
-.home-page {
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  overflow-y: none;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  opacity: 1;
+  transition: opacity ease-in 0.2s;
+}
+#loading-screen.stop {
+  opacity: 0;
+}
+.loading-message {
+  line-height: 100vh;
+}
+#home-page {
   height: 100vh;
   padding: 1.33em;
   background: #0e201f url("../images/shopping_cart.jpg");
@@ -15,6 +34,7 @@ a {
   background-position-x: center;
   background-size: cover;
   background-blend-mode: luminosity;
+  visibility: none;
 }
 .name {
   color: #00838f;
