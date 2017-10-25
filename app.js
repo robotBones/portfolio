@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(stylus.middleware({
-  src: path.join(__dirname, 'src'),
+  src: path.join(__dirname, 'src/stylesheets'),
   dest: path.join(__dirname, 'public/stylesheets')
 }));
 app.use(express.static(path.join(__dirname, 'public')));
