@@ -15,5 +15,16 @@
     "pug": "2.0.0-beta11",
     "serve-favicon": "~2.4.5",
     "stylus": "0.54.5"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-inject": "^4.3.0",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-nodemon": "^2.2.1",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1",
+    "sequelize-cli": "^3.0.0"
   }
 }
