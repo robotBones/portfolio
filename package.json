@@ -11,12 +11,16 @@
     "debug": "~2.6.9",
     "express": "~4.15.5",
     "forever-monitor": "^1.7.1",
+    "mongodb": "^2.2.33",
     "morgan": "~1.9.0",
     "pug": "2.0.0-beta11",
     "serve-favicon": "~2.4.5",
     "stylus": "0.54.5"
   },
   "devDependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express-session": "^1.15.6",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-inject": "^4.3.0",
