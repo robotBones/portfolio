@@ -9,4 +9,10 @@
   }
 
   window.addEventListener('load', killLoadingScreen);
+
+  $('#home-page').onepage_scroll({
+    sectionContainer: 'section',
+    keyboard: true
+  });
+
 })();

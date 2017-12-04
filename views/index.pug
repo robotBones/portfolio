@@ -3,12 +3,15 @@ extends layout
 block content
   div#loading-screen
     span.loading-message Loading Placeholder Images...
-  main#home-page(title='placeholder cover page')
-    h1.name= title
-    a(href='/blog') blog
-  section.dark-section
-  section.bright-section
+  div#home-page
+    section#cover(title='placeholder cover page')
+      h1.name= title
+      a(href='/blog') blog
+    section
+    section.green-section
 
   //- inject:js
+  script(src="/javascripts/jquery-1.11.0.min.js")
+  script(src="/javascripts/jquery.onepage-scroll.js")
   script(src="/javascripts/all.js")
   //- endinject
